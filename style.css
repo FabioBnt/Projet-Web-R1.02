@@ -5,7 +5,7 @@
 
 *
 {
-    font-family: 'Poppins';
+    font-family: 'Poppins',sans-serif;
 }
 
 body
@@ -102,7 +102,7 @@ body
 .container .iut_info
 {
     display: flex;
-    background: white;
+    background: #fff;
     
 }
 
