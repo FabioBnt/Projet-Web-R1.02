@@ -93,8 +93,8 @@ main .hist_but img
     width: 170px;
     padding: 10px;
     position: relative;
-    -webkit-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
+    -webkit-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
 }
 
 @keyframes spin {
@@ -113,6 +113,17 @@ main .hist_but .txtBx p
 {
     font-size: 1.6vw;
     margin-left: 20px;
+}
+
+main .hist_but .txtBx mark
+{
+    background-color: #3befff;
+    border-radius: 6px;
+}
+
+main .hist_but .txtBx a
+{
+    text-decoration: none;
 }
 
 .decorateur
@@ -499,7 +510,6 @@ main .hist_but .txtBx p
 {
     background-color: #000288;
 }
-
 
 /*COMPETENCE 6 */
 
