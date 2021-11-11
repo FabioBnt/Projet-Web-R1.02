@@ -62,7 +62,7 @@ main
     flex-direction: row;
     background-color: #fff;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: 0 10px 50px rgba(90, 106, 107, 0.198);
 }
 
@@ -73,7 +73,7 @@ main h1
     font-size: 2vw;
 }
 
-main .hist_but
+main .but .hist_but
 {
     display: flex;
     flex-direction: row;
@@ -81,14 +81,14 @@ main .hist_but
     margin-bottom: 30px;
 }
 
-main .hist_but .imgBx
+main .but .hist_but .imgBx
 {
     box-sizing: content-box;
     border-right: 5px solid #abf5ff;
     margin-right: 10px;
 }
 
-main .hist_but img
+main .but .hist_but img
 {
     width: 170px;
     padding: 10px;
@@ -101,26 +101,41 @@ main .hist_but img
     100%{-webkit-transform: rotateY(360deg);}
 }
 
-
-
-main .hist_but .txtBx
+main .but .hist_but .txtBx
 {
     background-color: rgb(233, 255, 248);
     border-radius: 10px;
 }
 
-main .hist_but .txtBx p
+main .but .hist_but .txtBx p
 {
     font-size: 1.6vw;
     margin-left: 20px;
 }
 
-main .hist_but .txtBx mark
+main .but .hist_but .txtBx mark
 {
-    background-color: #3befff;
+    background-color: #ffffff;
     border-radius: 6px;
 }
 
+main .hist_but .txtBx a
+{
+    text-transform: uppercase;
+}
+
+main .hist_but .txtBx a:hover
+{
+    color: #d40606;
+    transition: 0.3s;
+}
+
+main .hist_but .txtBx span
+{
+    color: #d40606;
+    font-weight: bold;
+
+}
 main .hist_but .txtBx a
 {
     text-decoration: none;
@@ -142,15 +157,16 @@ main .hist_but .txtBx a
     margin-bottom: 10px;
     padding: 10px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: 0 10px 50px rgba(185, 26, 26, 0.198);
 }
 
 .pres_iut_a h1
 {
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: center;
     color: #d40606;
+    font-weight: bold;
 }
 
 .pres_iut_a .block
@@ -158,25 +174,23 @@ main .hist_but .txtBx a
     margin: 10px;
     display: flex;
     flex-direction: row;
-    background-color: rgba(255, 0, 0, 0.829);
+    background: linear-gradient(70deg,#ff2525 60%, hsl(236, 100%, 97%));
     border-radius: 10px;
 }
 
 .pres_iut_a .block .imgIUT
 {
     margin: 20px;
-    margin-right: 10px;
+    margin-right: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     background-color: #fff;
-    border-radius: 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     min-width: 400px;
 }
-
-
-
 
 .pres_iut_a .block .imgIUT img
 {
@@ -192,24 +206,36 @@ main .hist_but .txtBx a
     transition: 1s;
 }
 
-.main_text .text_iut
+.pres_iut_a .block .main_text
 {
+    background-color: #fff;
+    margin: 20px;
+    margin-left: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    
+    
+}
+
+.pres_iut_a .block .main_text .text_iut
+{
+    font-size: 1.2vw;
     margin: 20px;
     margin-left: 10px;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-left: 6px solid rgb(238, 18, 18);
 }
 
-.main_text .text_iut p
+.pres_iut_a .block .main_text .text_iut p
 {
     padding: 10px;
     color: rgb(0, 0, 0);
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     text-align: inherit;
 }
 
-.main_text .text_iut ul, 
-.main_text .text_iut ul li
+.pres_iut_a .block .main_text .text_iut ul, 
+.pres_iut_a .block .main_text .text_iut ul li
 {
     color: rgb(0, 0, 0);
     font-size: 1vw;
@@ -227,11 +253,18 @@ main .hist_but .txtBx a
     background-color: #fff;
     box-shadow: 0 10px 50px rgba(185, 26, 26, 0.198);
     overflow: scroll;
+    border-radius: 3px;
 }
 
 .competences h1
 {
     text-align: center;
+    font-size: 3vw;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ec2b2b;
+    color: #fff;
 }
 
 /* COMPETENCE 1*/
@@ -536,6 +569,7 @@ main .hist_but .txtBx a
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 25px rgba(0,0,0, 0.2);
+    box-shadow: 0 10px 50px rgba(185, 26, 26, 0.198);
 }
 
 .vE h2
@@ -555,7 +589,6 @@ main .hist_but .txtBx a
     display: flex;
     flex-direction: row;
     align-items: center;
-
     background-color: rgb(255, 255, 255);
 }
 
