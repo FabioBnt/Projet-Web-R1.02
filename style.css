@@ -92,21 +92,16 @@ main .hist_but img
 {
     width: 170px;
     padding: 10px;
-    
-
+    position: relative;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
 }
 
-main .hist_but img:hover
-{
-    transform: scale(1.1);
-    transition: 1s;
+@keyframes spin {
+    100%{-webkit-transform: rotateY(360deg);}
 }
 
-main .hist_but img:hover
-{
-    transform: rotateY(360deg);
-    transition: 3s;
-}
+
 
 main .hist_but .txtBx
 {
@@ -268,6 +263,15 @@ main .hist_but .txtBx p
     margin: 10px;
     box-shadow: 0 10px 50px rgba(185, 169, 26, 0.198);
     border-radius: 20%; 
+}
+
+.competences .c2 .imgC1 img:hover,
+.competences .c4 .imgC1 img:hover,
+.competences .c5 .imgC1 img:hover,
+.competences .c6 .imgC1 img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .competences .c1 .textC,
