@@ -1,0 +1,96 @@
+<div class="container">
+<div class="hist_but">
+    <div class="image_but">
+            <img src="data/BUT_logo.svg.png" alt="logo du BUT">
+    </div>
+    <div class="hist_text">
+        <h3>Le BUT</h3>
+        <p>Le <strong class="strp"><mark><a href="https://fr.wikipedia.org/wiki/Bachelor_universitaire_de_technologie">
+            Bachelor Universitaire de Technologie</mark></strong></a> <strong id="abr">(BUT)</strong>, est un diplôme national de l’enseignement supérieur français créé en 2019 sanctionnant 
+            les trois premières années d'études dans un institut universitaire de technologie (IUT). 
+            Ce diplôme est issu de la fusion entre le 
+            <strong><mark>Diplôme Universitaire de Technologie</mark> (DUT)</strong> et la licence professionnelle pour devenir un diplôme de trois ans conférant <strong>180 crédits ECTS</strong>
+        </p>
+    </div>
+</div>
+</main>
+<div class="decorateur"></div>
+<div class="iut_info"> 
+    <div class="iut_image">
+        <h3>Le département Informatique</h3>
+        <a href="https://iut.univ-tlse3.fr/"><img src="data/IUT_tlseR.PNG" alt=""></a>
+    </div>
+    <div class="infoCIUT">
+        <div class="hist_iut_info">
+            <p> Créé en <span>1967</span>, le département <strong>INFORMATIQUE</strong> (IUT "A" Paul Sabatier) propose plusieurs diplômes professionnalisants et <mark><strong>accueille chaque année près de 500 étudiants.</strong></mark>  
+            Plus de <strong> 6400 étudiant(e)s déjà diplômé(e)s.</strong>
+            </p>
+        </div>
+        <ul class="contact">
+            <li> Adresse : 133 B, avenue de Rangueil - BP 67701 - 31077 Toulouse cedex 4</li>
+            <li>Tél : 05 62 25 87 73 </li>
+            <li>Fax : 05 62 25 87 75</li>
+        </ul>
+    </div>
+</div>
+<div class="decorateur"></div>
+<div class="competences">
+    <div class="c1">
+        <div class="imgBox">
+            <img src="data/user-interface.png" alt="interface">
+        </div>
+        <div class="liste">
+            <div class="ctitle">
+                <h3>Réaliser un
+                    développement d’application</h3>
+            </div>
+            <div class="listeC">
+                <ul>
+                    <p>Développer — c’est-à-dire
+                        concevoir, coder, tester et
+                        intégrer — une solution
+                        informatique pour un client.
+                    </p>
+                </ul>
+            </div>
+        <div>   
+    </div> 
+    <div class="c1">
+        <div class="imgBox">
+            <img src="data/user-interface.png" alt="interface">
+        </div>
+        <div class="liste">
+            <div class="ctitle">
+                <h3>Réaliser un
+                    développement d’application</h3>
+            </div>
+            <div class="listeC">
+                <p>Développer — c’est-à-dire
+                    concevoir, coder, tester et
+                    intégrer — une solution
+                    informatique pour un client.
+                </p>
+            </div>
+        <div>   
+    </div>                
+</div>
+</div>
+
+Bienvenue au département Informatique
+
+Créé en 1967, le département "INFORMATIQUE" (IUT "A" Paul Sabatier) propose plusieurs diplômes professionnalisants et accueille chaque année près de 500 étudiants. Plus de 6400 étudiant(e)s déjà diplômé(e)s.
+
+Portée par plus de 50 enseignants (titulaires et professionnels), son offre de formation s'exprime à travers des parcours très divers et porte sur :
+
+Le DUT "INFORMATIQUE"
+
+
+Il peut être obtenu :
+    En 2 ans, en formation initiale
+    En 1 an, en année spéciale.
+    En 3 ans,  en formation continue (en cours du soir).
+
+Les Licences Professionnelles
+
+    Développement et Qualité des Logiciels (DQL)
+    Gestion et Traitement Informatique de Données Massives (GTIDM)

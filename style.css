@@ -3,6 +3,11 @@
     src: url(data/poppins/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(data/ubuntu.ttf);
+}
+
 *
 {
     font-family: 'Poppins',sans-serif;
@@ -12,192 +17,160 @@ body
 {
     margin: 0;
     padding: 0;
-    background: rgb(255, 179, 3);
+    background: rgb(255, 255, 255);
 }
 
 /*!Header */
+
+
+main
+{
+    margin: 100px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    padding: 10px;
+    display: block;
+    flex-direction: row;
+    background-color: #fff;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 50px rgba(90, 106, 107, 0.198);
+}
+
+main h1
+{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 2vw;
+}
+
+main .hist_but
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+main .hist_but .imgBx
+{
+    box-sizing: content-box;
+    border-right: 5px solid #abf5ff;
+    margin-right: 10px;
+}
+
+main .hist_but img
+{
+    width: 170px;
+    padding: 10px;
+
+}
+
+main .hist_but img:hover
+{
+    transform: rotateY(360deg);
+    transition: 3s;
+}
+
+main .hist_but .txtBx
+{
+    background-color: rgb(233, 255, 248);
+    border-radius: 10px;
+}
+
+main .hist_but .txtBx p
+{
+    font-size: 1.6vw;
+    margin-left: 20px;
+}
+
+.decorateur
+{
+    background-color: rgb(255, 0, 0);
+    border: solid rgb(255, 0, 0);
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.pres_iut_a
+{
+    margin: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 50px rgba(185, 26, 26, 0.198);
+}
+
+.pres_iut_a h1
+{
+    font-size: 2vw;
+    text-align: center;
+    color: #d40606;
+}
+
+.pres_iut_a .block
+{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 0, 0, 0.829);
+    border-radius: 10px;
+}
+
+.pres_iut_a .block .imgIUT
+{
+    margin: 20px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.pres_iut_a .block .imgIUT img:hover
+{
+    transform: scaleZ(-100%);
+    transition: 1s;
+}
+
+.pres_iut_a .block .imgIUT img
+{
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.main_text .text_iut
+{
+    margin: 20px;
+    margin-left: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.main_text .text_iut p
+{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 1.1vw;
+    text-align: inherit;
+}
+
+.main_text .text_iut ul, 
+.main_text .text_iut ul li
+{
+    color: rgb(0, 0, 0);
+    font-size: 1vw;
+}
 
 
 .container
 {
     margin: 5px;
     padding: 5px;
-}
-
-.decorateur
-{
-    border: 2px solid rgb(255, 78, 78);;
-    background-color: rgb(255, 78, 78);;
-}
-/*Historique du BUT*/
-.container .hist_but
-{
-    position: relative;
-    border-radius: 9px;
-    display: flex;
-    align-content: stretch;
-    border: solid rgb(255, 255, 255);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.1);
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.container .hist_but .image_but
-{
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    width: 400px;
-    height: 190px;
-    background: rgb(181, 225, 250);
-}
-
-.container .hist_but .image_but img
-{
-    width: 150px;
-    height: 180px;
-    margin: 5px;
-}
-
-.container .hist_but .image_but img:hover 
-{
-    transform: rotateY(360deg);
-    transition: 1.5s;
-}
-
-.container .hist_but .hist_text 
-{
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 0px;
-    background: rgb(255, 255, 255);
-    height: 190px;
-    width: auto;
-    font-size: 15px;
-}
-
-.container .hist_but .hist_text p
-{
-    margin: 5px;
-}
-
-.container .hist_but .hist_text h3
-{
-    text-align: center;
-    color: rgb(0, 82, 82);
-}
-
-.container .hist_but .hist_text a
-{
-    text-decoration: none;
-}
-
-.container .hist_but .hist_text a:hover
-{
-    color: rgb(255, 0, 0);
-    transition: 0.5s;
-}
-
-.container .hist_but .hist_text mark
-{
-    background-color: rgb(194, 236, 243);
-}
-
-/*IUT Informatique Toulouse Rangueil*/
-.container .iut_info
-{
-    display: flex;
-    background: #fff;
-    
-}
-
-.container .iut_info .iut_image
-{
-    position: relative;
-    
-    width: auto;
-    background: rgb(245, 245, 245);
-}
-
-.container .iut_info .iut_image h3
-{
-    margin: 10px;
-    text-align: center;
-    background-color: rgb(253, 45, 30);
-    color: #fff;
-}
-
-.container .iut_info .iut_image:hover
-{
-    transform: scaleZ(100px);
-    transition: 0.5s;
-}
-
-.container .iut_info .iut_image img
-{
-    width: 220px;
-    height: 220px;
-    margin: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
-
-.container .iut_info .infoCIUT 
-{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 251, 228);
-}
-
-.container .iut_info .infoCIUT .hist_iut_info
-{
-    margin: 0px;
-    background: rgb(172, 2, 2);
-    color: #fff;
-    text-align: center;
-}
-
-.container .iut_info .infoCIUT .hist_iut_info p
-{
-    margin: 5px;
-}
-
-.container .hist_but .hist_text h3
-{
-    text-align: center;
-}
-
-.container .iut_info .infoCIUT ul
-{
-    list-style-type: square;
-}
-
-/*Liste des compétences*/
-
-.container .competences
-{
-    border: solid;
-}
-.container .competences .c1
-{
-    display: flex;
-    background-color: #fff;
-    flex-direction: row;
-}
-.container .competences .c1 .imgBox
-{
-    max-width: 200px;
-    max-height: auto;
-    
-}
-
-.container .competences .c1 .imgBox img
-{
-    margin: 30px;
-    width: 100px;
-}
-
-.container .competences .c1 .liste
-{
-    align-content: row;
 }
 
 
@@ -207,73 +180,13 @@ body
 /*Telephone*/
 @media (max-width: 600px)
 {
-    .container .hist_but,.container .iut_info
-    {
-        flex-direction: column;
-    }
-    .container .hist_but .image_but
-    {
-        width: 100%;
-        height: 110px;
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
-    }
-
-    .container .hist_but .image_but img
-    {
-        max-width: 90px;
-        max-height: 100px; 
-        margin-left: 36%;
-    }
-    
-    .container .hist_but .hist_text
-    {
-        min-height: 220px;
-        font-size: 12px;
-        text-align: center;
-    }
-    .container .hist_but .hist_text p
-    {
-        padding: 1%; 
-    }
-
-    .container .iut_info .hist_iut_info
-    {
-        text-align: center;
-    }
-    .container .iut_info .iut_image
-    {
-        border-right: solid rgba(255, 255, 255, 0);
-        background: #fff;
-        margin: 5px;
-        max-width: 100%;
-    }
-
-    .container .iut_info .iut_image img
-    {
-        width: 300px;
-        height: 250px;
-        align-content: center;
-        margin-left: 30px;
-    }
-    
 
 }
 
 /*Tablette*/
 @media screen and (max-width: 768)
 {
-    .container .hist_but .hist_text p
-    {
-        padding-top: 5px;
-        margin-top: 0px;
-        
-    }
 
-    .container .iut_info .iut_image img
-    {
-        margin-left: 30px;
-    }
 
     
 }
@@ -281,21 +194,12 @@ body
 /*PC portable*/
 @media screen and (max-width: 992px)
 {
-    .container .hist_but .hist_text p
-    {
-        padding-top: 0px;
-        text-align: inherit;
-        font-size: 12px;
-    }
 
 }
 
 /*Moniteur*/
 @media screen and (min-width: 1000px)
 {
-    .container .hist_but .hist_text p
-    {
-        margin-top: 20px;
-    }
+
 }
 
