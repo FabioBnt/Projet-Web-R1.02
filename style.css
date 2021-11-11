@@ -92,7 +92,14 @@ main .hist_but img
 {
     width: 170px;
     padding: 10px;
+    
 
+}
+
+main .hist_but img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 main .hist_but img:hover
@@ -155,21 +162,28 @@ main .hist_but .txtBx p
     margin-right: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     background-color: #fff;
     border-radius: 10px;
+    min-width: 400px;
 }
 
-.pres_iut_a .block .imgIUT img:hover
-{
-    transform: scaleZ(-100%);
-    transition: 1s;
-}
+
+
 
 .pres_iut_a .block .imgIUT img
 {
     margin: 10px;
     border-radius: 10px;
+    width: 320px;
+    height: 320px;
+}
+
+.pres_iut_a .block .imgIUT img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .main_text .text_iut
@@ -246,11 +260,11 @@ main .hist_but .txtBx p
 .competences .c5 .imgC1 img,
 .competences .c6 .imgC1 img
 {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin: 10px;
     box-shadow: 0 10px 50px rgba(185, 169, 26, 0.198);
-    border-radius: 50%;  
+    border-radius: 20%; 
 }
 
 .competences .c1 .textC,
@@ -260,12 +274,13 @@ main .hist_but .txtBx p
 .competences .c5 .textC,
 .competences .c6 .textC
 {
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 10px;
     margin-left: 0px;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(248, 248, 248);
     font-size: 3vh;
     border-left: 5px solid #ff00009d;
+    width: 100%;
 }
 
 .competences .c1 .textC h3,
@@ -279,6 +294,16 @@ main .hist_but .txtBx p
     color: #000000;
     font-size: 1.3vw;
     text-transform: uppercase;
+}
+
+.competences .c1 .textC .description,
+.competences .c2 .textC .description,
+.competences .c3 .textC .description,
+.competences .c4 .textC .description,
+.competences .c5 .textC .description,
+.competences .c6 .textC .description
+{
+    font-size: 20px;
 }
 
 .competences .c1 .textC .description p,
@@ -415,6 +440,11 @@ main .hist_but .txtBx p
     background-color: #f5a423;
 }
 
+.competences .c3 .imgC1 img:hover
+{
+    transform: rotateZ(90deg);
+    transition: 1s;
+}
 
 .competences .c3 .textC .list_box ul li:hover
 {
@@ -426,6 +456,12 @@ main .hist_but .txtBx p
 .competences .c4 .textC
 {
     border-left: 5px solid #07dd009d;
+}
+
+.competences .c4 .imgC1 img:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .competences .c4 .textC .description p
