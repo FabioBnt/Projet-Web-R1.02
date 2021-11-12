@@ -11,6 +11,8 @@
 *
 {
     font-family: 'Poppins','Ubuntu',sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 body
@@ -23,34 +25,117 @@ body
 /*!Header */
 
 header{
-    height: 40%;
+    border-bottom: solid 3px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.logos1{
+
+/* Images du header */
+header .images{
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.logo1,
+.logo2{
     border: solid 3px;
-    margin: 10px;
-    background-color: lightgray;
-    justify-content: center;
+    box-sizing: border-box;
 }
 
 
 .logoIUT{
-    width: 25%;
-    height: 25%;
-    margin-left: 10px;
+    width: 30%;
+    height: 30%;
 }
 
 .logoUT3{
-    width: 25%;
-    height: 25%;
-    margin: 10px;
+    width: 20%;
 }
 
 .logoBUT{
-    width: 15%;
-    height: 25%;
+    width: 20%;
+    height: 15%;
 }
+/*-----------*/
+
+/* Menu du header */
+header .menu{
+    display: flex;
+    flex-direction: row;
+}
+nav{
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0px;
+}
+
+.conteneur-nav{
+    position: absolute;
+    width: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    display: none;
+    background-color: #555;
+}
+
+nav input[type=checkbox]:checked + ul{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+nav input[type=checkbox]{
+    display: none;
+}
+
+nav label{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rgb(219, 40, 40);
+}
+
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav > div > ul > li > a{
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    border: solid 2px;
+    margin: 3px;
+    background-color: rgb(216, 25, 25);
+    padding: 10px 0px;
+}
+
+.sous{
+    display: flex;
+    flex-flow: column wrap;
+    z-index: 1000;
+}
+
+.sous li{
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+
 
 main
 {
@@ -657,10 +742,10 @@ main .hist_but .txtBx a
     display: flex;
     flex-direction: row;
 }
-.conteneur .competence .niveau_1
-{
+/* .conteneur .competence .niveau_1 
+{ */
 
-}
+
 
 
 
@@ -692,6 +777,40 @@ main .hist_but .txtBx a
 /*Moniteur*/
 @media screen and (min-width: 1000px)
 {
+    .conteneur-nav{
+        position: static;
+    }
+    nav label, nav input{
+        display: none;
+    }
+    nav input[type=checkbox]:checked + ul, nav ul{
+        display: flex;
+        flex-flow: row wrap;
+        background-color: white;
+    }
+    nav ul li{
+        position: relative;
+    }
+    
+    nav ul li a:hover{
+        background-color: rgb(230, 91, 26);
+    }
 
+    .sous{
+        display: none;
+        position: absolute;
+        width: 100%;
+    }
+    nav > div > ul li:hover .sous{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .sous a{
+        border-bottom: none;
+    }
+    .deroulant > a::after{
+        content:" ▼";
+        font-size: 12px;
+    }
 }
 
