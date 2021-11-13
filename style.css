@@ -137,7 +137,7 @@ nav a{
 }
 
 
-main
+.pr_but_info
 {
     margin: 100px;
     margin-bottom: 20px;
@@ -151,14 +151,14 @@ main
     box-shadow: 0 10px 50px rgba(90, 106, 107, 0.198);
 }
 
-main h1
+.pr_but_info h1
 {
     text-align: center;
     color: cornflowerblue;
     font-size: 2vw;
 }
 
-main .but .hist_but
+.pr_but_info .but .hist_but
 {
     display: flex;
     flex-direction: row;
@@ -166,64 +166,61 @@ main .but .hist_but
     margin-bottom: 30px;
 }
 
-main .but .hist_but .imgBx
+.pr_but_info .but .hist_but .imgBx
 {
     box-sizing: content-box;
     border-right: 5px solid #abf5ff;
     margin-right: 10px;
 }
 
-main .but .hist_but img
+.pr_but_info .but .hist_but img
 {
     width: 170px;
     padding: 10px;
     position: relative;
     -webkit-animation: spin 4s linear infinite;
-    animation: spin 4s linear infinite;
+    animation: spin 4s ease-in-out infinite;
 }
 
 @keyframes spin {
     100%{-webkit-transform: rotateY(360deg);}
 }
 
-main .but .hist_but .txtBx
+.pr_but_info .but .hist_but .txtBx
 {
     background-color: rgb(233, 255, 248);
     border-radius: 10px;
 }
 
-main .but .hist_but .txtBx p
+.pr_but_info .but .hist_but .txtBx p
 {
     font-size: 1.6vw;
     margin-left: 20px;
 }
 
-main .but .hist_but .txtBx mark
+.pr_but_info .but .hist_but .txtBx mark
 {
     background-color: #ffffff;
     border-radius: 6px;
 }
 
-main .hist_but .txtBx a
+.pr_but_info .hist_but .txtBx a
 {
     text-transform: uppercase;
+    text-decoration: none;
 }
 
-main .hist_but .txtBx a:hover
+.pr_but_info .hist_but .txtBx a:hover
 {
     color: #d40606;
     transition: 0.3s;
 }
 
-main .hist_but .txtBx span
+.pr_but_info .hist_but .txtBx span
 {
     color: #d40606;
     font-weight: bold;
 
-}
-main .hist_but .txtBx a
-{
-    text-decoration: none;
 }
 
 .decorateur
@@ -328,11 +325,16 @@ main .hist_but .txtBx a
     text-align: inherit;
 }
 
-.pres_iut_a .block .main_text .text_iut ul, 
-.pres_iut_a .block .main_text .text_iut ul li
+.pres_iut_a .block .main_text .text_iut .formation,
+.pres_iut_a .block .main_text .text_iut .contact
 {
-    color: rgb(0, 0, 0);
+    margin-left: 20px;
     font-size: 1vw;
+}
+
+.pres_iut_a .block .main_text .text_iut .contact li
+{
+    color: #000000;
 }
 
 .competences
