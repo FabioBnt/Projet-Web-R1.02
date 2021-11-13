@@ -721,41 +721,6 @@ main .hist_but .txtBx a
 
 /*Competence 1*/
 
-.title
-{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2vw;
-    font-family: 'Ubuntu';
-}
-.conteneur
-{
-    background-color: #ffffff;
-    margin-left: 100px;
-    margin-right: 100px;
-    display: flex;
-    flex-direction: column;
-}
-.conteneur .competence .niveau_1
-{
-    border: solid;
-    display: flex;
-    flex-direction: row;
-}
-/* .conteneur .competence .niveau_1 
-{ */
-
-
-
-
-
-
-
-
-
-
-
-
 /*Telephone*/
 @media (max-width: 600px)
 {
