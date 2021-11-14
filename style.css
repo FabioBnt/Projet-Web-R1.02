@@ -492,7 +492,8 @@ nav a{
 .competences .c3 .textC .list_box ul,
 .competences .c4 .textC .list_box ul,
 .competences .c5 .textC .list_box ul,
-.competences .c6 .textC .list_box ul
+.competences .c6 .textC .list_box ul,
+.app_crit .appr_cr .boite .liste_ac li
 {
     
     background-color: #fff;
@@ -501,12 +502,26 @@ nav a{
     
 }
 
+/*_-_-*/
+.app_crit .appr_cr .boite .liste_ac li
+{
+    border-radius: 0px;
+    margin: 5px;
+    list-style: none;
+    padding-left: 20px;
+    align-items: center;
+}
+.app_crit .appr_cr .boite .liste_ac li
+{
+    width: 70%;
+}
 .competences .c1 .textC .list_box ul li,
 .competences .c2 .textC .list_box ul li,
 .competences .c3 .textC .list_box ul li,
 .competences .c4 .textC .list_box ul li,
 .competences .c5 .textC .list_box ul li,
-.competences .c6 .textC .list_box ul li
+.competences .c6 .textC .list_box ul li,
+.app_crit .appr_cr .boite .liste_ac
 {
     
     list-style: none;
@@ -728,7 +743,211 @@ nav a{
 }
 
 
-/*Competence 1*/
+/*PAGE Competence*/
+.body_comp
+{
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.body_comp h1
+{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #dd0700;
+    color: #fff;
+    font-size: 4vw;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+
+
+.body_comp a
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px;
+    margin-left: 42%;
+    margin-right: 40%;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #d40606;
+    color: #fff
+}
+
+.app_crit
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 10px 50px rgba(90, 106, 107, 0.198);
+}
+
+.app_crit h2
+{
+    text-align: center;
+    margin: 5px;
+    text-transform: capitalize;
+}
+
+.app_crit .appr_cr .boite
+{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    margin-right: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.app_crit .appr_cr .boite img
+{
+    padding: 5px;
+    margin: 5px;
+}
+
+.app_crit .appr_cr .boite .liste_ac
+{
+    margin: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.app_crit .appr_cr .boite .liste_ac ul,
+.app_crit .appr_cr .boite .liste_ac li
+{
+    border: 1px solid rgb(255, 3, 3);
+    box-shadow: none;    
+    text-align: center;
+    border-radius: 2px;
+}
+
+
+.evaluation
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 5px;
+    /*
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    */
+}
+
+.evaluation h2,
+.sae h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: solid rgb(244, 248, 28);
+    margin-bottom: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.evaluation .tableau_eva
+{
+    display: flex;
+}
+
+.evaluation .tableau_eva table,
+.sae .desc_sae table
+{
+    border-collapse: collapse;
+    box-shadow: 1px 5px 10px rgb(223, 220, 220);
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.evaluation .tableau_eva table thead
+{
+    box-shadow: 0 5px 20px rgb(240, 238, 238);
+    background-color: #b6b6b641;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.evaluation .tableau_eva table th,
+.sae .desc_sae table th
+{
+    padding: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+.evaluation .tableau_eva table td,
+.sae .desc_sae table td
+{
+    padding: 0.5rem 0.3rem;
+    margin: 12px;
+    text-align: center;
+}
+.evaluation .tableau_eva table .evalued
+{
+    background-color: #fde934e7;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-weight: bold;
+    margin: 12px;
+    border-radius: 5px;
+}
+
+.sae
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.sae h2
+{
+    border-bottom: solid rgb(121, 121, 121);
+}
+
+.sae .desc_sae
+{
+    padding: 7px;
+}
+
+.sae .desc_sae table
+{
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.sae .desc_sae table th
+{
+    text-align: left;
+    padding: 10px;
+    background-color: #b6b6b641;
+}
+
+.sae .desc_sae table td li
+{
+    list-style: inside;
+}
+
+.ressources
+{
+    border: solid;
+    padding: 5px;
+    margin-top: 10px;
+}
 
 /*Telephone*/
 @media (max-width: 600px)

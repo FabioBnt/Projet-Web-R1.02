@@ -5,12 +5,13 @@
         <title>Competence 1</title>
         <link rel="stylesheet" type="text/css" href="/projet-html/style.css">
     </head>
-    <body>
+    <body class="body_comp">
         <h1>Compétence 1</h1>
+        <a href="#">Revenir à l'accueil</a>
         <main class="app_crit">
+            <h2>Apprentissages critiques</h2>
             <div class="appr_cr">
-                <h2>Apprentissages critiques</h2>
-                <div class="boite1">
+                <div class="boite">
                     <img src="com_1.png" alt="">
                     <ul class="liste_ac">
                         <li>Implémenter des conceptions simples</li>
@@ -25,23 +26,25 @@
         <div class="evaluation">
             <h2>évaluation</h2>
             <div class="tableau_eva">
-                <table class="tab" border="1">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>R1.01 Initiation au dev</th>
+                        <th>R1.02 Dev. interfaces web</th>
+                        <th>R1.03 Intro Archi.</th>
+                        <th>R1.04 Intro. Systèmes</th>
+                        <th>R1.06 Introduction BD</th>
+                        <th>R1.07 Outils fondamentaux</th>
+                        <th>R1.08 Gestion projet orga.</th>
+                        <th>R1.09 Economie</th>
+                        <th>R1.10 Anglais technique</th>
+                        <th>R1.11 Bases de la comm.</th>
+                        <th>R1.12 Projet personnel</th>
+                        </tr>
+                    </thead>
                     <tr>
-                       <th>R1.01 Initiation au dev</th>
-                       <th>R1.02 Dev. interfaces web</th>
-                       <th>R1.03 Intro Archi.</th>
-                       <th>R1.04 Intro. Systèmes</th>
-                       <th>R1.06 Introduction BD</th>
-                       <th>R1.07 Outils fondamentaux</th>
-                       <th>R1.08 Gestion projet orga.</th>
-                       <th>R1.09 Economie</th>
-                       <th>R1.10 Anglais technique</th>
-                       <th>R1.11 Bases de la comm.</th>
-                       <th>R1.12 Projet personnel</th>
-                    </tr>
-                    <tr>
-                       <td>42</td>
-                       <td>12</td>
+                       <td><div class="evalued">42</div></td>
+                       <td><div class="evalued">12</div></td>
                        <td>x</td>
                        <td>x</td>
                        <td>x</td>
@@ -59,11 +62,12 @@
         <div class="sae">
             <h2>Saé</h2>
             <div class="desc_sae">
-                <table class="tab2" border="1" style="text-align: center;">
+                <table class="tab2" border="1">
                     <tr>
                        <th>Nom de la SAE</th>
                        <td>S1.01 Implémentation d'un besoin client</td>
                     </tr>
+                    
                     <tr>
                        <th>Compétence visée</th>
                        <td>C1 : Réaliser un développement d'application</td>
@@ -162,7 +166,7 @@
                             </ul>
                         </div>
                     </div>
-
+                </div>
             </div>
         </div>
         <div class="hyperlien">
