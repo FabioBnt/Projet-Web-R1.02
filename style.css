@@ -844,7 +844,8 @@ nav a{
 }
 
 .evaluation h2,
-.sae h2
+.sae h2,
+.ressources h2
 {
     text-align: center;
     text-transform: uppercase;
@@ -944,10 +945,99 @@ nav a{
 
 .ressources
 {
-    border: solid;
+    border: 3px solid rgb(251, 0, 0);
     padding: 5px;
     margin-top: 10px;
 }
+
+.ressources h2
+{
+    border-bottom: solid rgb(250, 103, 34);
+}
+
+.ressources .res1
+{
+    border: 2px solid rgb(133, 132, 117);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.ressources .res1 .ctxtres
+{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.ressources .res1 .ctxtres .md,
+.ressources .res1 .ctxtres .md_2,
+.ressources .res1 .ctxtres .name_md
+{
+    background-color: #dd1a00;
+    line-height: 30px;
+    padding: 12px;
+    margin: 10px;
+    color: #fff;
+}
+
+.ressources .res1 .ctxtres .md,
+.ressources .res1 .ctxtres .md_2
+{
+    margin-right: 0px;
+}
+
+.ressources .res1 .ctxtres .md_2
+{
+    background-color: rgb(250, 170, 66);
+}
+
+.ressources .res1 .ctxtres .name_md
+{
+    margin-left: 0px;
+    background-color: #d4d4d4;
+}
+
+.ressources .res1 .txt_part
+{
+    margin-left: 15px;
+    padding: 5px;
+    background-color: #dfdede;
+}
+
+.ressources .res1 .txt_part .part_one,
+.ressources .res1 .txt_part .desciption_res
+{
+    border: solid rgb(204, 204, 190);
+    background-color: beige;
+    box-shadow: 0px 5px 10px rgba(0,0,0, 0.5);
+}
+
+.ressources .res1 .txt_part .part_one
+{
+    margin-bottom: 5px;
+}
+
+.ressources .res1 .txt_part .desciption_res h4
+{
+    margin-left: 15px;
+    margin-top: 6px;
+    text-transform: uppercase;
+    color: #d40606;
+}
+
+.ressources .res1 .txt_part .part_one ul,
+.ressources .res1 .txt_part .desciption_res ul
+{
+    padding: 5px;
+}
+
+.ressources .res1 .txt_part .part_one li,
+.ressources .res1 .txt_part .desciption_res li
+{
+    list-style: inside square;
+}
+
 
 /*Telephone*/
 @media (max-width: 600px)
