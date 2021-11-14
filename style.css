@@ -235,9 +235,9 @@ nav a{
 .decorateurC
 {
     background-color: rgb(136, 0, 0);
-    border: solid rgb(255, 0, 0);
-    margin-right: 100px;
-    margin-left: 100px;
+    border: 1px solid rgb(255, 0, 0);
+    margin-right: 0px;
+    margin-left: 0px;
     margin-top: 10px;
 }
 
