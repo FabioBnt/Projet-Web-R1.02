@@ -39,25 +39,19 @@ header .images{
     align-items: center;
 }
 
-.logo1,
-.logo2{
-    border: solid 3px;
-    box-sizing: border-box;
-}
-
 
 .logoIUT{
-    width: 30%;
+    width: 10%;
     height: 30%;
 }
 
 .logoUT3{
-    width: 20%;
+    width: 15%;
 }
 
 .logoBUT{
-    width: 20%;
-    height: 15%;
+    width: 7%;
+    margin-left: 67%;
 }
 /*-----------*/
 
@@ -81,7 +75,7 @@ nav{
 nav ul{
     list-style-type: none;
     display: none;
-    background-color: #555;
+    background-color: #fff;
 }
 
 nav input[type=checkbox]:checked + ul{
@@ -128,12 +122,12 @@ nav a{
 
 .sous li{
     flex: 1 1 auto;
-    text-align: left;
+    text-align: center;
 }
 
 .sous a{
     padding: 10px;
-    border-bottom: none;
+    background-color: rgb(250, 103, 34);
 }
 
 
@@ -1089,7 +1083,7 @@ nav a{
         flex-flow: column wrap;
     }
     .sous a{
-        border-bottom: none;
+        background-color: rgb(216, 25, 25);
     }
     .deroulant > a::after{
         content:" ▼";
