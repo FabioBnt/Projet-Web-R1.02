@@ -298,8 +298,6 @@ nav a{
     margin-left: 0;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    
-    
 }
 
 .pres_iut_a .block .main_text .text_iut
@@ -1097,6 +1095,95 @@ footer .infos
 /*PC portable*/
 @media screen and (max-width: 992px)
 {
+    /*MAIN BUT*/
+    .pr_but_info .but .hist_but
+    {
+        flex-direction: column;
+    }
+
+    .pr_but_info h1
+    {
+    text-align: center;
+    color: rgb(86, 137, 231);
+    font-size: 2.8vw;
+   }
+
+    .pr_but_info .but .hist_but .imgBx
+    {
+        border-right: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+        border-bottom: 5px solid #abf5ff;
+    }
+
+    .pr_but_info .but .hist_but img
+    {
+        width: 100px;
+    }
+
+    .pr_but_info .but .hist_but .txtBx p
+    {
+       font-size: 2.5vw;
+       margin: 8px;
+       text-align: center;
+    }
+
+    .pr_but_info .but .hist_but .txtBx
+    {
+        border: solid rgb(150, 188, 238);
+    }
+
+    /*PRES IUT A*/
+    .pres_iut_a .block
+    {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(70deg,#ff2525 60%, hsl(0, 100%, 91%));
+        border-radius: 10px;
+    }    
+
+    .pres_iut_a .block .imgIUT
+    {
+        margin: 20px;
+        margin-right: 80px;
+        margin-left: 60px;
+        display: flex;
+        border-radius: 5px;
+    }
+
+    .pres_iut_a .block .imgIUT img
+    {
+        width: 300px;
+        height: 300px;
+    }
+
+    .pres_iut_a .block .main_text .text_iut .formation,
+    .pres_iut_a .block .main_text .text_iut .contact
+    {
+        margin-left: 20px;
+        font-size: 1.9vw;
+    }
+
+    .pres_iut_a .block .main_text .text_iut p
+    {
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 1.9vw;
+    }
+
+    .pres_iut_a .block .main_text
+    {
+        margin-left: 20px;
+        border-radius: 5px;
+    }
+
+
+
+    .pres_iut_a .block .main_text .text_iut
+    {
+        margin-left: 10px;
+    }
 
 }
 
