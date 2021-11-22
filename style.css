@@ -17,7 +17,6 @@
 
 body
 {
-    margin: 0;
     padding: 0;
     background: rgb(255, 255, 255);
 }
@@ -30,6 +29,7 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 /* Images du header */
@@ -678,8 +678,7 @@ nav a{
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 25px rgba(0,0,0, 0.2);
-    box-shadow: 0 10px 50px rgba(185, 26, 26, 0.198);
+    box-shadow: 0 4px 5px rgba(0,0,0, 0.1);
 }
 
 .vE h2
@@ -731,7 +730,6 @@ nav a{
     margin-left: 20px;
     margin: 30px;
     width: 300px;
-    height: 300px;
 }
 
 
@@ -1108,6 +1106,11 @@ footer .infos
     font-size: 2.8vw;
    }
 
+   .pr_but_info
+   {
+       margin: 60px;
+   }
+
     .pr_but_info .but .hist_but .imgBx
     {
         border-right: none;
@@ -1134,6 +1137,13 @@ footer .infos
     }
 
     /*PRES IUT A*/
+    .pres_iut_a,
+    .pr_but_info,
+    .decorateur,
+    .competences
+    {
+        margin: 60px;
+    }
     .pres_iut_a .block
     {
         margin: 10px;
@@ -1178,14 +1188,93 @@ footer .infos
         border-radius: 5px;
     }
 
-
-
     .pres_iut_a .block .main_text .text_iut
     {
         margin-left: 10px;
     }
 
-}
+    /*COMPETENCES*/
+    .competences .c1,
+    .competences .c2,
+    .competences .c3,
+    .competences .c4,
+    .competences .c5,
+    .competences .c6
+    {
+        flex-direction: column;
+    }
+
+    .competences .c1 .imgC1,
+    .competences .c2 .imgC1,
+    .competences .c3 .imgC1,
+    .competences .c4 .imgC1,
+    .competences .c5 .imgC1,
+    .competences .c6 .imgC1
+    {
+        margin-left: 180px;
+    }
+
+    .competences .c1 .textC .description p,
+    .competences .c2 .textC .description p,
+    .competences .c3 .textC .description p,
+    .competences .c4 .textC .description p,
+    .competences .c5 .textC .description p,
+    .competences .c6 .textC .description p
+    {
+        font-size: 2.1vw;
+    }
+
+    .competences .c1 .textC h3,
+    .competences .c2 .textC h3,
+    .competences .c3 .textC h3,
+    .competences .c4 .textC h3,
+    .competences .c5 .textC h3,
+    .competences .c6 .textC h3
+    {
+        font-size: 2.4vw;
+    }
+
+    .competences .c1 .textC .list_box ul li,
+    .competences .c2 .textC .list_box ul li,
+    .competences .c3 .textC .list_box ul li,
+    .competences .c4 .textC .list_box ul li,
+    .competences .c5 .textC .list_box ul li,
+    .competences .c6 .textC .list_box ul li,
+    .app_crit .appr_cr .boite .liste_ac
+    {
+        font-size: 1.8vw;
+    }
+
+    .competences .c3 .imgC1 img:hover
+    {
+        transform: rotateZ(180deg);
+    }
+
+    /*Vie etu*/
+    .vE
+    {
+        margin: 60px 60px 0px 60px;
+    }
+
+    .vE .vie_etu
+    {
+        flex-direction: column;
+    }
+
+    .vE .vie_etu .imgEtu
+    {
+        border-left: none;
+        border-top: 5px solid #f55336;
+    }
+
+    .vE .vie_etu .texteF p
+    {
+        padding: 10px;
+        font-size: 2.1vw;
+        text-align: center;
+    }
+
+
 
 /*Moniteur*/
 @media screen and (min-width: 1000px)
