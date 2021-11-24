@@ -8,9 +8,14 @@
     src: url(data/Ubuntu-M.ttf);
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url(data/opensans/OpenSans-Regular.ttf);
+}
+
 *
 {
-    font-family: 'Poppins','Ubuntu',sans-serif;
+    font-family: 'Open Sans','Poppins','Ubuntu',sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -25,6 +30,7 @@ body
 
 header{
     border-bottom: solid 3px;
+    border-color: lightgrey;
     height: fit-content;
     width: 100%;
     display: flex;
@@ -129,7 +135,7 @@ nav a{
     padding: 10px;
     background-color: rgb(250, 103, 34);
 }
-
+/* ------------------------------- */
 
 .pr_but_info
 {
@@ -331,7 +337,7 @@ nav a{
 
 .competences
 {
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: y mandatory;
     display: flex;
     flex-direction: column;
     margin-left: 100px;
@@ -733,7 +739,7 @@ nav a{
 }
 
 
-/*PAGE Competence*/
+/*!PAGE Competence*/
 .body_comp
 {
     margin: 10px;
@@ -1029,55 +1035,201 @@ nav a{
     list-style: inside square;
 }
 
-/* Footer */
+/*! Footer */
 footer{
-    background-color: rgba(236, 231, 231, 0.952);
-    color:red;
-    display: inline-block;
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-top: solid 2px lightgray;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
 }
 
-footer .imgPlan
-{
-    border-left: 5px solid #f55336;
+.planSite{
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.4vw;
+    width: 40%;
+}
+
+.planSite a{
+    text-decoration: none;
+    color: #333;
+}
+    
+.bloc{
+    width: 25%;
+    margin: 0 15px;
+}
+
+.footer-competences p{
+    padding-bottom: 5px;
+    padding-top: 2px;
+    font-size: 1.3vw;
+}
+
+.liste-competences{
+    list-style-type: none;
+}
+
+.liste-competences li{
+    padding: 2px 0;
+}
+
+.liste-competences a{
+    text-decoration: none;
+    color: rgb(70, 67, 67);
+    font-size: 1.1vw;
+}
+
+.liste-competences a:hover{
+    color:lightgray;
+}
+
+.lienCNIL{
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.lienCNIL a
+{ 
+    font-family: 'Ubuntu';
+    font-size: 1.5vw;
+    color: #ff0000;
+}
+
+.lienCNIL a:hover{
+    color: orangered;
+}
+
+.infos
+{
+    font-family: 'Ubuntu';
+    font-size: 1.3vw;
+    text-align: right;
+    color: #ff0000;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.infos ul{
+    list-style-type: none;
+}
+
+/*!Presentation BUT */
+#titreBUT{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.firstPart{
+    box-shadow: 3px 2px 5px rgba(0,0,0, 0.1);
+    border-radius: 3px;
+    margin: 100px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.firstPart h2{
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: solid 5px rgb(238, 29, 35);
+    padding-bottom: 10px;
+}
+
+.main_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
     align-items: center;
 }
 
-
-footer .imgPlan img
-{
-    margin-left: 50px;
-    width: 400px;
-    height: 400px;
+.tableau_ressources{
+    margin-right: 30px;
 }
 
-footer .imgPlan a
-{ 
- font-family: 'Ubuntu';
- font-size: 2vw;
- text-align: center;
- padding-top: -200px;
- width: 100%;
- height: 100%;
- color: #ff0000;
- margin-left: -250px;  
-
+.tableau_ressources table{
+    border-collapse: collapse;
 }
 
-footer .infos
-{
- font-family: 'Ubuntu';
- font-size: 1vw;
- text-align: right;
- padding-top: -1600px;
- width: 100%;
- height: 100%;
- color: #ff0000;
- float: right;
- margin-left: -550px; 
-
+.tableau_ressources td, th{
+    border: 1px solid black;
+    padding: 3px;
 }
 
+.tableau_ressources thead{
+    background-color: #A9A8A8;
+}
+
+.text_valid {
+    font-size: 1vw;
+    width: 40%;
+    display: flex;
+    margin: 0 0 15px 30px;
+    background-color: rgba(212, 201, 191, 0.432);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+
+.second_part img{
+    width: 220px;
+    height: 220px;
+}
+
+.image_comp{
+    align-self: center;
+}
+
+.blocG{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 3px 2px 5px rgba(0,0,0, 0.1);
+    border-radius: 3px;
+    margin: 100px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.blocD{
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 3px 2px 5px rgba(0,0,0, 0.1);
+    border-radius: 3px;
+    margin: 100px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.liste_comps{
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 10px;
+    text-align: center;
+}
+
+.liste_comps div{
+    padding-top: 30px;
+    margin: 10px;
+}
+
+.comp1 .liste_comps div{
+    background-color: rgb(192, 0, 0);
+}
+
+.comp2 .liste_comps div{
+    background-color: rgb(247, 145, 82);
+}
 
 /*Telephone*/
 @media (max-width: 600px)
@@ -1315,6 +1467,23 @@ footer .infos
         content:" ▼";
         font-size: 12px;
     }
+
+    
 }
 
+@media screen and (max-width: 1300px) {
 
+    .planSite{
+        width: 700px;
+        flex-wrap: wrap;
+    }
+
+    .bloc{
+        width: 40%;
+        margin: 0 0;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2){
+        margin-bottom: 50px;
+    }
+}
