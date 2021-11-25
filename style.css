@@ -1340,8 +1340,7 @@ footer{
 }
 
 
-.renseignements .img_iut_a,
-.renseignements .coord_iut .maps_iut_a
+.renseignements .img_iut_a
 {
     border: solid;
 }
@@ -1351,16 +1350,34 @@ footer{
     width: 370px;
 }
 
-.renseignements .coord_iut .maps_iut_a
+.renseignements .coord_iut .ct
 {
+    overflow: hidden;
+    width: auto;
+    border: solid rgb(209, 73, 68);
     margin-left: 5%;
     width: fit-content;
 }
 
-.renseignements .coord_iut .maps_iut_a img
+.renseignements .coord_iut .ct .maps_iut_a
+{
+    position: relative;
+}
+
+.renseignements .coord_iut .ct .maps_iut_a img
 {
     width: 370px;
     overflow: hidden;
+}
+
+.renseignements .coord_iut .ct .maps_iut_a img {
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+    }
+.renseignements .coord_iut .ct:hover .maps_iut_a img {
+    -webkit-transform: scaleX(2.2);
+    -webkit-transform: scaleY(3);
+    transform: scale(2.2);
 }
 
 .renseignements .coord_iut .adress
