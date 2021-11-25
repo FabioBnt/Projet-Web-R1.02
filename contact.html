@@ -6,37 +6,37 @@
         <title>Contactez-nous</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <body>
-        <h1>CONTACTEZ-NOUS</h1>
-        <main>
-            <h2>Entrez vos informations et votre demande</h2>
+    <body id="page_contact_us">
+        <h1 id="title_pc">CONTACTEZ-NOUS</h1>
+        <main id="main_contact">
+            <h2 id="title_h2_pc">Entrez vos informations et votre demande</h2>
             <div class="data_user">
                 <form action="" method="get" class="form_contact">
                     <div class="form-nom">
                     <label for="nom">Nom </label>
                     <input type="text" name="nom" id="user_nom" required>
                     </div>
-                    <div class="form-nom">
+                    <div class="form-prenom">
                         <label for="prenom">Prenom </label>
                         <input type="text" name="prenom" id="user_prenom" required>
                     </div>
-                    <div class="form_contact">
+                    <div class="form_email">
                     <label for="email">Votre email </label>
                     <input type="email" name="email" id="email" required>
                     </div>
-                    <div class="form_contact">
-                    <input type="submit" value="Envoyer">
+                    <div class="form_env">
+                    <input id="envoyer" type="submit" value="Envoyer">
                     </div>
                 </form>
                 <div class="comment">
-                    <textarea name="message" id="mess_user" cols="30" rows="10" placeholder="Ecrivez votre message..."></textarea>
+                    <textarea autocapitalize="sentences" name="message" id="mess_user" cols="30" rows="10" placeholder="Ecrivez votre message..."></textarea>
                 </div>
             </div>
         </main>
         <div class="renseignements">
             <div class="img_iut_a"><img src="data/IUT_tlseR.PNG" alt="photo de l'iut A"></div>
             <div class="coord_iut">
-                <div class="adress">133 Av. de Rangueil, 31400 Toulouse</div>
+                <div class="adress"><p>133 Av. de Rangueil, 31400 Toulouse</div>
                 <div class="maps_iut_a"><img src="data/maps_iut_a.PNG" alt=""></div>
             </div>
             

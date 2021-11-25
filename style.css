@@ -1231,6 +1231,149 @@ footer{
     background-color: rgb(247, 145, 82);
 }
 
+/*PAGE CONTACT*/
+#page_contact_us
+{
+    background-color: #fffcf3;
+    border: solid beige;
+    padding: 5%;
+    font-family: 'Open Sans';
+}
+
+#title_pc
+{
+    text-align: center;
+    padding: 8px;
+    background-color: #fff3e0;
+    color: #bb0000;
+    box-sizing: content-box;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#main_contact
+{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    border: solid rgb(36, 29, 29);
+    margin: 10px 0px 10px 0px;
+    background: rgb(250, 58, 58) !important;
+}
+
+#title_h2_pc
+{
+    padding: 3px;
+    border: solid;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.data_user
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.data_user .form_contact
+{
+    color: #fff;
+}
+
+.data_user label,
+#user_nom,
+#user_prenom
+{
+    display: table-row;
+    margin-bottom: 10px;
+}
+
+#user_nom,
+#user_prenom,
+#email
+{
+    width: 300px;
+    height: 25px;
+}
+
+#email
+{
+    margin-bottom: 10px;
+}
+
+#envoyer
+{
+    width: 120px;
+    height: 30px;
+}
+
+.data_user .form_contact
+{
+    border: solid;
+    padding: 10px;
+}
+
+.data_user .comment,
+.data_user .comment textarea
+{
+    margin-left: 5%;
+    resize: none;
+    padding: 5px;
+}
+
+.renseignements
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid;
+    padding: 5px;
+}
+
+.renseignements .coord_iut
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.renseignements .img_iut_a,
+.renseignements .coord_iut .maps_iut_a
+{
+    border: solid;
+}
+
+.renseignements .img_iut_a img
+{
+    width: 370px;
+}
+
+.renseignements .coord_iut .maps_iut_a
+{
+    margin-left: 5%;
+    width: fit-content;
+}
+
+.renseignements .coord_iut .maps_iut_a img
+{
+    width: 370px;
+    overflow: hidden;
+}
+
+.renseignements .coord_iut .adress
+{
+    margin: 0% 0% 3% 10%;
+}
+
+.renseignements .coord_iut .adress p
+{
+    text-align: center;
+}
+
+
 /*Telephone*/
 @media (max-width: 600px)
 {
