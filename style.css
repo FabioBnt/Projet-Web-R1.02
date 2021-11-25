@@ -1394,6 +1394,7 @@ footer{
     outline: none;
     font-weight: 500;
     font-size: 16px;
+    width: 170%;
     line-height: 1.1;
     transition: all 0.3s;
 }
@@ -1427,6 +1428,9 @@ footer{
 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: auto;
 }
 
 .renseignements .img_iut_a img
@@ -1474,7 +1478,7 @@ footer{
 {
     text-align: center;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 1.1vw;
     padding: 10px;
     border: solid white;
     background: rgb(240, 38, 38);
