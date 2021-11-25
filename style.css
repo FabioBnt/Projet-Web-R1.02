@@ -138,6 +138,10 @@ nav a{
 }
 /* ------------------------------- */
 
+.txtGras p{
+    font-weight: bold;
+}
+
 .pr_but_info
 {
     margin: 100px;
@@ -351,7 +355,7 @@ nav a{
     border-radius: 3px;
 }
 
-.competences h1
+.competences h2
 {
     text-align: center;
     font-size: 3vw;

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale1.0 user-scalable=no">
+        <meta charset="utf-8">
         <meta name="Accueil" content="Accueil du site de l'IUT de Rangueil" />
         <title>IUT de Toulouse III</title>
+        <meta name="viewport" content="width=device-width, initial-scale1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -17,7 +18,7 @@
                 <nav>
                     <div class="conteneur-nav">
                         <label for="mobile">Afficher / Cacher le menu</label>
-                        <input type="checkbox" id="mobile" role="button">
+                        <input type="checkbox" id="mobile" role="button" aria-pressed="true">
                         <ul>
                             <li><a href="/index.html">Accueil</a></li>
                             <li><a href="/pres_but.html">Présentation du BUT</a></li>
@@ -47,8 +48,7 @@
                     </div>
                     <div class="txtBx">
                         <p>
-                            Le <strong class="strp"><mark><a href="https://fr.wikipedia.org/wiki/Bachelor_universitaire_de_technologie">
-                            Bachelor Universitaire de Technologie</mark></strong></a> <strong id="abr">(BUT)</strong>, est un diplôme national de l’enseignement supérieur français créé en 2019 sanctionnant 
+                            Le <strong class="strp"><mark><a href="https://fr.wikipedia.org/wiki/Bachelor_universitaire_de_technologie">Bachelor Universitaire de Technologie </a></mark></strong> <strong id="abr">(BUT)</strong>, est un diplôme national de l’enseignement supérieur français créé en 2019 sanctionnant 
                             les trois premières années d'études dans un <span>I</span>nstitut <span>U</span>niversitaire de <span>T</span>echnologie (IUT). 
                             Ce diplôme est issu de la fusion entre le 
                             <strong>Diplôme Universitaire de Technologie (DUT)</strong> et la licence professionnelle pour devenir un diplôme de trois ans conférant <strong>180 crédits ECTS</strong>
@@ -69,7 +69,7 @@
                         <p> Créé en <span>1967</span>, le département <strong>INFORMATIQUE</strong> (IUT "A" Paul Sabatier) propose plusieurs diplômes professionnalisants et <mark><strong>accueille chaque année près de 500 étudiants.</strong></mark>  
                             Plus de <strong> 6400 étudiant(e)s déjà diplômé(e)s.</strong>
                             Portée par plus de 50 enseignants (titulaires et professionnels), son offre de formation s'exprime à travers des parcours très divers et porte sur :
-                            Le BUT "INFORMATIQUE". </br>
+                            Le BUT "INFORMATIQUE". <br>
                             Il peut être obtenu :
                         </p>
                         <ul class="formation">
@@ -77,11 +77,13 @@
                             <li>En 1 an, en année spéciale.</li>
                             <li>En 3 ans,  en formation continue (en cours du soir).</li>
                         </ul>
-                        <ul class="formation"><strong>Les Licences Professionnelles</strong> 
+                        <h4>Les Licences Professionnelles</h4>
+                        <ul class="formation">   
                             <li>Développement et Qualité des Logiciels (DQL)</li>
                             <li>Gestion et Traitement Informatique de Données Massives (GTIDM)</li>
                         </ul>
-                        <ul class="contact"><strong>Contact</strong>
+                        <h4>Contact</h4>
+                        <ul class="contact"> 
                             <li>Adresse : <strong>133 B, avenue de Rangueil - BP 67701 - 31077 Toulouse cedex 4</strong></li>
                             <li>Tél : <strong>05 62 25 87 73 </strong></li>
                             <li>Fax : <strong>05 62 25 87 75</strong></li>
@@ -93,8 +95,8 @@
         <div class="decorateur"></div>
         <section>
             <div class="competences">
-                <h1>Les compétences fondamentales du 
-                </br>BUT INFORMATIQUE</h1>
+                <h2>Les compétences fondamentales du 
+                <br>BUT INFORMATIQUE</h2>
                 <div class="c1">
                     <div class="imgC1">
                         <img src="data/developper.gif" alt="">
