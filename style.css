@@ -1268,61 +1268,53 @@ footer{
 }
 
 /*PAGE CONTACT*/
-#page_contact_us
+#body_contact
 {
-    background-color: #faf4f4;
+    background-color: #f6f6f6;
     border: solid beige;
-    padding: 5%;
     font-family: 'Open Sans';
 }
 
 #title_pc
 {
     text-align: center;
-    padding: 8px;
-    background-color: #e0e0e0;
-    color: #ffffff;
-    box-sizing: content-box;
-    width: 50%;
-    margin-left: 25%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 2% 0% 2% 45%;
+    border-bottom: solid rgb(207, 5, 5);
+    padding: 10px;
+    width: fit-content;
+    font-size: 3vw;
+    box-shadow: 0px 0px 2px rgba(0,0,0, 0.5);
+}
+
+.page_contact_us
+{
+    margin: 0px 80px 0px 80px;
 }
 
 #main_contact
 {
-    display: flex;
-    padding: 5px;
-    flex-direction: column;
-    border: solid rgb(245, 245, 245);
-    margin: 10px 0px 10px 0px;
-    background: linear-gradient(to right,rgb(216, 20, 20) 20%, #ffe38f 20% 0%);
-    box-shadow: 0 0 5px 5px #d3d3d31c;
+    padding: 2%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px rgba(0,0,0, 0.5);
 }
 
 #title_h2_pc
 {
-    padding: 3px;
-    margin-right: 25%;
-    margin-left: 25%;
-    text-align: center;
-    margin-bottom: 3%;
-    background: rgb(240, 38, 38);
-    color: rgb(255, 255, 255);
-    border-radius: 2px;
+    border-bottom: solid rgb(207, 5, 5);
+    width: fit-content;
+    padding-bottom: 12px;
+    margin-bottom: 1.5%;
 }
 
 .data_user
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
-}
-
-.data_user .form_contact
-{
-    border: solid #f6f5f1;
-    background: #fff;
-    border-radius: 2px;
-    padding: 10px;
+    padding: 12px;
+    box-shadow: 0px 0px 2px rgba(0,0,0, 0.5);
+    box-sizing: content-box;
 }
 
 #user_nom,
@@ -1345,19 +1337,6 @@ footer{
     height: 25px;
 }
 
-.data_user form input[type="submit"]
-{
-    max-width: 100px;
-    background: rgb(192, 0, 0);
-    color: #fff;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    border: none;
-    letter-spacing: 1px;
-    transition: 0.1s;
-}
-
 .data_user label,
 #user_nom,
 #user_prenom
@@ -1367,35 +1346,42 @@ footer{
     color: #000;
 }
 
-#email
+.data_user form input[type="submit"]
 {
-    margin-bottom: 10px;
+    max-width: 100px;
+    background: rgb(192, 0, 0);
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    letter-spacing: 1px;
+    transition: 0.1s;
 }
 
-#envoyer
+.data_user .comment
 {
-    width: 120px;
-    height: 30px;
+    width: 100%;
+    margin-left: 2%;
+    border-left: solid rgb(207, 5, 5);
+    box-sizing: border-box;
+    padding: 1%;  
 }
 
-.data_user .comment,
 .data_user .comment textarea
 {
-    margin-left: 5%;
     resize: none;
-    padding: 5px;  
-}
-
-.data_user .comment textarea
-{
     background-color: #fff;
     color: rgb(36, 35, 35);
     border: 2px solid transparent;
     outline: none;
     font-weight: 500;
     font-size: 16px;
-    width: 170%;
+    width: 98%;
+    height: 95%;
     line-height: 1.1;
+    padding: 5px;
     transition: all 0.3s;
 }
 
@@ -1418,10 +1404,11 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 2px solid rgba(228, 215, 215, 0.205);
-    background-color: #f6f5f1;
+    background: #fff;
     padding: 5px;
-    box-shadow: 0 0 5px 5px #d3d3d348;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 2px rgba(0,0,0, 0.5);
 }
 
 .renseignements .coord_iut
@@ -1429,24 +1416,38 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 10%;
-    margin-right: auto;
+}
+
+.renseignements .img_iut_a
+{
+    border-right: solid rgb(207, 5, 5);
+    padding: 5px;
+    padding-right: 6%;
+    padding-left: 5%;
+    margin-right: 5%;
 }
 
 .renseignements .img_iut_a img
 {
     width: 370px;
-    border: 3px solid rgb(182, 182, 182);
-    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgba(0,0,0, 0.5);
+}
+
+.renseignements .img_iut_a img:hover
+{
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
+    transition: 1s;
 }
 
 .renseignements .coord_iut .ct
 {
     overflow: hidden;
-    width: auto;
-    border: solid rgb(209, 73, 68);
-    margin-left: 5%;
     width: fit-content;
+    border: solid rgb(209, 73, 68);
+    margin-left: 0%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    padding: 0;;
 }
 
 .renseignements .coord_iut .ct .maps_iut_a
@@ -1456,7 +1457,7 @@ footer{
 
 .renseignements .coord_iut .ct .maps_iut_a img
 {
-    width: 370px;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -1471,7 +1472,7 @@ footer{
 
 .renseignements .coord_iut .adress
 {
-    margin: 0% 0% 3% 10%;
+    margin: 0% 0% 0% 5%;
 }
 
 .renseignements .coord_iut .adress p
@@ -1480,9 +1481,8 @@ footer{
     font-weight: bold;
     font-size: 1.1vw;
     padding: 10px;
-    border: solid white;
-    background: rgb(240, 38, 38);
-    color: white;
+    background: #fff;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
 }
 

@@ -1,0 +1,125 @@
+#main_contact
+{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    border: solid rgb(245, 245, 245);
+    margin: 10px 0px 10px 0px;
+    background: linear-gradient(to right,rgb(216, 20, 20) 20%, #ffe38f 20% 0%);
+    box-shadow: 0 0 5px 5px #d3d3d31c;
+}
+
+#title_h2_pc
+{
+    padding: 3px;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: center;
+    margin-bottom: 3%;
+    background: rgb(240, 38, 38);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.data_user
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.data_user .form_contact
+{
+    border: solid #f6f5f1;
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+#user_nom,
+#user_prenom,
+#email
+{
+    position: relative;
+    padding: 10px;
+    background: #ecebeb;
+    color: #333333;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 8px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-radius: 0px;
+    width: 300px;
+    height: 25px;
+}
+
+.data_user form input[type="submit"]
+{
+    max-width: 100px;
+    background: rgb(192, 0, 0);
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    letter-spacing: 1px;
+    transition: 0.1s;
+}
+
+.data_user label,
+#user_nom,
+#user_prenom
+{
+    display: table-row;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+#email
+{
+    margin-bottom: 10px;
+}
+
+#envoyer
+{
+    width: 120px;
+    height: 30px;
+}
+
+.data_user .comment,
+.data_user .comment textarea
+{
+    margin-left: 5%;
+    resize: none;
+    padding: 5px;  
+}
+
+.data_user .comment textarea
+{
+    background-color: #fff;
+    color: rgb(36, 35, 35);
+    border: 2px solid transparent;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    width: 170%;
+    line-height: 1.1;
+    transition: all 0.3s;
+}
+
+.data_user .comment textarea:hover
+{
+    cursor: pointer;
+    background-color: rgb(246, 243, 243);
+}
+
+.data_user .comment textarea:focus
+{
+    cursor: text;
+    color: #2c2b28;
+    background-color: #fff;
+    border-color: #f06161;
+}
