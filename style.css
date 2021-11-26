@@ -44,8 +44,8 @@ header .images{
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-image: url(data/dashed.png);
 }
-
 
 .logoIUT{
     width: 10%;
@@ -1270,7 +1270,7 @@ footer{
 /*PAGE CONTACT*/
 #body_contact
 {
-    background-color: #f6f6f6;
+    background: rgb(246, 246, 246);
     border: solid beige;
     font-family: 'Open Sans';
 }
@@ -1443,7 +1443,8 @@ footer{
 {
     overflow: hidden;
     width: fit-content;
-    border: solid rgb(209, 73, 68);
+    box-shadow: 0px 0px 2px rgba(0,0,0, 0.5);
+    border: 2px solid gray;
     margin-left: 0%;
     margin-right: 2%;
     margin-bottom: 5%;
