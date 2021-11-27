@@ -692,19 +692,26 @@ nav a{
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 2px rgba(0,0,0, 0.5);
+    background: url(data/vieEtudi.jpg);
+    object-fit: fill;
+    align-items: center;
+    padding: 10px;
 }
 
 .vE h2
 {
+    padding: 5px;
+    margin-bottom: 8px;
+    line-height: 1;
     font-family: 'Ubuntu';
     font-size: 3vw;
     text-align: center;
-    padding-top: 20px;
-    width: 100%;
-    height: 100%;
+    width: fit-content;
     text-transform: uppercase;
+    background: wheat;
     color: #b30000;
     border-radius: 2px;
+    border: 2px solid white;
 }
 
 .vE .vie_etu
@@ -1053,6 +1060,7 @@ nav a{
 
 /*! Footer */
 footer{
+    padding-top: 5px;
     display: flex;
     width: 100%;
     min-height: 250px;
