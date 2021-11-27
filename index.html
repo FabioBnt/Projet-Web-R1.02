@@ -10,9 +10,9 @@
     <body>
         <header>
             <div class="images">
-                <img src="/data/logo_iut_info.PNG" alt="logo IUT Info" class="logoIUT">
-                <img src="/data/logo_UT3.jpg" alt="logo UT3" class="logoUT3">                
-                <img src="/data/logo_BUTech.png" alt="logo BUT" class="logoBUT">                
+                <img src="data/logo_iut_info.PNG" alt="logo IUT Info" class="logoIUT">
+                <img src="data/logo_UT3.jpg" alt="logo UT3" class="logoUT3">                
+                <img src="data/logo_BUTech.png" alt="logo BUT" class="logoBUT">                
             </div>
             <div class="menu">
                 <nav>
@@ -137,7 +137,7 @@
                                 consommation de ressources...</p>
                             <div class="list_box">
                                 <ul>
-                                    <li><span>1</span>En formalisant et modélisant des situations complexesr</li>
+                                    <li><span>1</span>En formalisant et modélisant des situations complexes</li>
                                     <li><span>2</span>En recensant les algorithmes et les structures de données usuels</li>
                                     <li><span>3</span>En recensant les algorithmes et les structures de données usuels</li>
                                     <li><span>4</span>En justifiant les choix et validant les résultats</li>
@@ -278,7 +278,7 @@
                         </p>
                     </div>
                     <div class="imgEtu">
-                        <img src="data/students.jpg" alt="">
+                        <a href="https://www.univ-tlse3.fr/logements-restauration"><img src="data/students.jpg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -286,23 +286,22 @@
         <footer>
             <div class="planSite">
                 <div class="bloc footer-accueil">
-                    <a href="index.html">Accueil</a>
+                    <a href="index.html" id="ai"><img src="data/logo_UT3.jpg" alt="logo de l'iut" id="img_foo"></a>
+                    <a href="#" id="a_colp">Présentation du BUT</a>
                 </div>
 
-                <div class="bloc footer-presBUT">
-                    <a href="#">Présentation du BUT</a>
-                </div>
-               
                 <div class="bloc footer-competences">
-                    <p>Compétences</p>
-                    <ul class="liste-competences">
-                        <li><a href="c1.html">Compétence 1</a></li>
-                        <li><a href="c2.html">Compétence 2</a></li>
-                        <li><a href="c3.html">Compétence 3</a></li>
-                        <li><a href="c4.html">Compétence 4</a></li>
-                        <li><a href="c5.html">Compétence 5</a></li>
-                        <li><a href="c6.html">Compétence 6</a></li>
-                    </ul>
+                    <details>
+                        <summary>Compétences</summary>
+                        <ul class="liste-competences">
+                            <li><a href="c1.html">Compétence 1</a></li>
+                            <li><a href="c2.html">Compétence 2</a></li>
+                            <li><a href="c3.html">Compétence 3</a></li>
+                            <li><a href="c4.html">Compétence 4</a></li>
+                            <li><a href="c5.html">Compétence 5</a></li>
+                            <li><a href="c6.html">Compétence 6</a></li>
+                        </ul>
+                    </details>
                 </div>
 
                 <div class="bloc footer-contact">
@@ -311,14 +310,19 @@
             </div>
 
             <div class="lienCNIL">
+                <div class="logo_rg_cn">
+                    <img src="data/cnil_logo.jpg" alt="logo du CNIL">
+                    <img src="data/rgpd.png" alt="logo du RGPD">
+                </div>
                 <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">CNIL-RGPD</a>
             </div>
             
             <div class="infos">
+                <img src="data/labsTerraGroup.jpg" alt="">
                 <ul>
-                    <li>LABS TERRAGROUP</li>
+                    <li id="groupe">LABS TERRAGROUP</li>
                     <li>DAURE Thomas</li>
-                    <li>ANRIFOU Amdjad</li>
+                    <li id="UI_designer">ANRIFOU Amdjad</li>
                     <li>BENTAILA Fabio</li>                   
                 </ul>
            </div>         
