@@ -762,6 +762,7 @@ nav a{
 }
 
 /*!PAGE Competence*/
+
 .body_comp
 {
     margin: 10px;
@@ -1229,7 +1230,7 @@ footer{
 }
 abbr{
     text-decoration: none;
-    
+
 }
 
 @keyframes animate
@@ -1255,15 +1256,24 @@ abbr{
 #titreBUT{
     text-align: center;
     margin-top: 10px;
+    background: #fff;
+    text-align: center;
+    width: fit-content;
+    margin: 1% 20% 0% 40%;
+    border-bottom: 2px solid #b30000;
+    padding: 5px;
 }
 
 .firstPart{
-    box-shadow: 3px 2px 5px rgba(0,0,0, 0.1);
-    border-radius: 3px;
-    margin: 100px;
+    box-shadow: 0px 0px 2px rgba(0,0,0, 0.5);
+    border-radius: 2px;
+    margin: 0px 70px 0px 70px;
     margin-bottom: 20px;
-    margin-top: 70px;
+    margin-top: 2%;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .firstPart h2{
@@ -1271,6 +1281,8 @@ abbr{
     margin-top: 20px;
     border-bottom: solid 5px rgb(238, 29, 35);
     padding-bottom: 10px;
+    width: fit-content;
+    text-align: center;
 }
 
 .main_content{
@@ -1283,6 +1295,9 @@ abbr{
 
 .tableau_ressources{
     margin-right: 30px;
+    margin: 20px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 2px rgba(0,0,0, 0.5);
 }
 
 .tableau_ressources table{
@@ -1291,24 +1306,33 @@ abbr{
 
 .tableau_ressources td, th{
     border: 1px solid black;
-    padding: 3px;
+    padding: 5px;
+    text-align: center;
+}
+
+.tableau_ressources .trued
+{
+    background-color: rgb(204, 255, 197);
+    font-weight: bold;
+    color: black;
+    border: 2px solid rgb(146, 145, 141);
 }
 
 .tableau_ressources thead{
-    background-color: #A9A8A8;
+    background-color: #c20000;
+    color: white;
 }
 
 .text_valid {
-    font-size: 1vw;
+    font-size: 1.1vw;
     width: 40%;
     display: flex;
     margin: 0 0 15px 30px;
-    background-color: rgba(212, 201, 191, 0.432);
-    border-radius: 10px;
-    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.432);
+    box-shadow: 0px 0px 2px rgba(0,0,0, 0.5);
+    padding: 10px;
+    border-left: 4px solid #215d95;
 }
-
-
 
 .second_part img{
     width: 220px;
@@ -1324,15 +1348,15 @@ abbr{
     transition: 1s;
 }
 
-.blocG{
+.blocG {
     display: flex;
     flex-direction: row;
-    box-shadow: 3px 2px 5px rgba(0,0,0, 0.1);
+    align-items: center;
+    box-shadow: 0px 0px 2px rgba(0,0,0, 0.5);
     border-radius: 3px;
-    margin: 100px;
-    margin-bottom: 20px;
-    margin-top: 50px;
+    margin: 0px 70px 0px 70px;
     background-color: #fff;
+    padding: 5px;
 }
 
 .blocD{
@@ -1346,14 +1370,12 @@ abbr{
     background-color: #fff;
 }
 
-.liste_comps{
-    margin-left: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 30px;
-    row-gap: 10px;
-    text-align: center;
+.liste_comps_1{
+ display: flex;
+ align-items: center;
+ border: solid;
+ margin-left: 4%;
+ color: #fff;
 }
 
 .liste_comps div{
@@ -1361,8 +1383,13 @@ abbr{
     margin: 10px;
 }
 
-.comp1 .liste_comps div{
+.comp1 .liste_comps_1 p{
     background-color: rgb(192, 0, 0);
+    margin: 12px;
+    padding: 12px;
+    width: 250px;
+    height: 100px;
+    text-align: center;
 }
 
 .comp2 .liste_comps div{
@@ -1394,8 +1421,6 @@ abbr{
 /*PAGE CONTACT*/
 #body_contact
 {
-    background: rgb(246, 246, 246);
-    border: solid beige;
     font-family: 'Open Sans';
 }
 
@@ -1404,7 +1429,7 @@ abbr{
     text-align: center;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    margin: 2% 0% 2% 45%;
+    margin: 2% 0% 2% 40%;
     border-bottom: solid rgb(207, 5, 5);
     padding: 10px;
     width: fit-content;
