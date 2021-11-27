@@ -23,7 +23,7 @@
 body
 {
     padding: 0;
-    background: rgb(255, 255, 255);
+    background: url(data/backgnd_acc.png);
 }
 
 /*!Header */
@@ -1226,6 +1226,10 @@ footer{
     color: brown;
     font-weight: bolder;
     animation: animate  0.5s ease-in-out infinite;
+}
+abbr{
+    text-decoration: none;
+    
 }
 
 @keyframes animate
