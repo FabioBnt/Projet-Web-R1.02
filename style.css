@@ -767,17 +767,19 @@ nav a{
 #ancre
 {
     display: flex;
-    text-align: center;
     justify-content: center;
-    margin-top: 10px;
-    padding: 5px;
-    margin-left: 42%;
-    margin-right: 40%;
-    margin-bottom: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    background-color: #d40606;
-    color: #fff
+    margin: 1%;
+}
+#ancre img
+{
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+#ancre img:hover
+{
+    transform: rotate(360deg);
+    transition: 1s;
 }
 
 .app_crit
@@ -914,7 +916,7 @@ nav a{
 .evaluation .tableau_eva table thead
 {
     box-shadow: 0 0px 10px rgb(240, 238, 238);
-    background-color: #ffec41af;
+    background-color: #ffd601;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -1019,6 +1021,7 @@ nav a{
     box-shadow: 0px 0px 2px rgba(0,0,0, 0.5);
     margin: 1%;
     width: fit-content;
+    background: rgb(248, 248, 248);
 }
 
 .ressources .res .ctxtres .md,
@@ -1028,27 +1031,37 @@ nav a{
     padding: 12px;
     margin: 8px;
     color: #fff;
+    border-radius: 2px;
 }
 
-.ressources .res1 .ctxtres .md
+.res1 .ctxtres .md
 {
     background-color: #dd1a00;
+    box-shadow: 0px 0px 5px rgba(226, 19, 19, 0.5);
 }
 
-.ressources .res .ctxtres .md
+.res .ctxtres .md
 {
     margin-right: 0px;
 }
 
 .res2 .md
 {
-    background-color: rgb(250, 170, 66);
+    background: #ffb83e;
+    box-shadow: 0px 0px 5px rgba(226, 195, 19, 0.5);
 }
+
+.res2 .md,
+.res1 .ctxtres .md
+{
+    border: solid white ;
+}
+
 
 .ressources .res .ctxtres .name_md
 {
     margin-left: 0px;
-    background-color: #a0a0a0;
+    background: linear-gradient(60deg,#fc210d,#450a3b);
 }
 
 .ressources .res .txt_part
@@ -1986,8 +1999,6 @@ abbr{
         content:" ▼";
         font-size: 12px;
     }
-
-    
 }
 
 /*Moniteur 2*/
