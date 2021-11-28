@@ -764,6 +764,11 @@ nav a{
     margin-top: 30px;
 }
 
+.compt2 h1
+{
+    background-color: #e98560;
+}
+
 #ancre
 {
     display: flex;
@@ -861,6 +866,11 @@ nav a{
     border: 2px solid black;
 }
 
+.app_crit .appr_cr .boite .cp2 li
+{
+    background: #e08b51;
+}
+
 .app_crit .appr_cr .boite .liste_ac li:nth-child(even)
 {
     animation-delay: 700ms;
@@ -942,7 +952,7 @@ nav a{
 }
 .evaluation .tableau_eva table .evalued
 {
-    background-color: #fde934e7;
+    background-color: #f00000;
     padding: 0.5rem 1rem;
     color: #fff;
     font-weight: bold;
@@ -1034,28 +1044,48 @@ nav a{
     border-radius: 2px;
 }
 
-.res1 .ctxtres .md
+.res .ctxtres .md
 {
-    background-color: #dd1a00;
+    border: solid white;
     box-shadow: 0px 0px 5px rgba(226, 19, 19, 0.5);
 }
 
-.res .ctxtres .md
+.res1 .md
 {
-    margin-right: 0px;
+    background-color: #dd1a00;
 }
 
 .res2 .md
 {
     background: #ffb83e;
-    box-shadow: 0px 0px 5px rgba(226, 195, 19, 0.5);
 }
 
-.res2 .md,
-.res1 .ctxtres .md
+.res3 .md
 {
-    border: solid white ;
+    background: #450a3b;
 }
+
+.res4 .md
+{
+    background: #535351;
+}
+
+.res5 .md
+{
+    background: #535351;
+}
+
+.res6 .md
+{
+    background: #2d5868;
+}
+
+.res7 .md
+{
+    background: #b98d69;
+}
+
+
 
 
 .ressources .res .ctxtres .name_md
